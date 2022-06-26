@@ -46,14 +46,14 @@ itemsWhithSubItems.forEach((item) => {
 /** esta funcion inicializa un carousel, recibe como parametro la clase del elemento contenedor donde quiero inicializar */
 
 
-const  newsData  = await getData(RUTA_API_NEWS)
-console.log(newsData.articles)
+const { articles } = await getData(RUTA_API_NEWS)
+console.log(articles)
 const container_news = document.querySelector(".banner_news")
 const imgBroken = '../assets/banners/imgBroken.png'
 
 
-if (container_news && newsData.status == 'ok') {
-    newsData.articles.forEach(({ category, urlToImage, title, publishedAt, url }) => {
+if (container_news && articles) {
+    articles.forEach(({ category, urlToImage, title, publishedAt, url }) => {
         category === undefined ? category = 'sin categoria' : category
         container_news.innerHTML += `
                                         <div class="banner-news__ctn">
