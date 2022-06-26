@@ -47,13 +47,13 @@ itemsWhithSubItems.forEach((item) => {
 
 
 const  newsData  = await getData(RUTA_API_NEWS)
-console.log(newsData.data)
+console.log(newsData.articles)
 const container_news = document.querySelector(".banner_news")
 const imgBroken = '../assets/banners/imgBroken.png'
 
 
 if (container_news && newsData.status == 'ok') {
-    newsData.data.forEach(({ category, urlToImage, title, publishedAt, url }) => {
+    newsData.articles.forEach(({ category, urlToImage, title, publishedAt, url }) => {
         category === undefined ? category = 'sin categoria' : category
         container_news.innerHTML += `
                                         <div class="banner-news__ctn">

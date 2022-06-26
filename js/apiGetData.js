@@ -6,7 +6,7 @@
  */
 const getData = async (enlace) => {
     const res = await fetch(enlace);
-    if (res.ok) {
+    if (res) {
         return res.json()
     } else {
         console.log(res.status)
