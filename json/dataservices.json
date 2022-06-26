@@ -1,0 +1,26 @@
+[
+    {
+        "name":"ahorros",
+        "icon":"../assets/icons/servicios/icono-servicios01.png"
+    },
+    {
+        "name":"creditos",
+        "icon":"../assets/icons/servicios/icono-servicios02.png"
+    },
+    {
+        "name":"giros red conecta",
+        "icon":"../assets/icons/servicios/icono-servicios03.png"
+    },
+    {
+        "name":"convenios",
+        "icon":"../assets/icons/servicios/icono-servicios04.png"
+    },
+    {
+        "name":"servicios en linea",
+        "icon":"../assets/icons/servicios/icono-servicios05.png"
+    },
+    {
+        "name":"red de oficinas",
+        "icon":"../assets/icons/servicios/icono-servicios06.png"
+    }
+]

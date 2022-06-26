@@ -1,0 +1,34 @@
+[
+    {
+        "name":"Portal Transaccional",
+        "icon":"../assets/imagesDestacados/icono-destacados01.png"
+    },
+    {
+        "name":"sucursal virtual",
+        "icon":"../assets/imagesDestacados/icono-destacados02.png"
+    },
+    {
+        "name":"credito en linea",
+        "icon":"../assets/imagesDestacados/icono-destacados03.png"
+    },
+    {
+        "name":"simulador de ahorro",
+        "icon":"../assets/imagesDestacados/icono-destacados04.png"
+    },
+    {
+        "name":"simulador de credito",
+        "icon":"../assets/imagesDestacados/icono-destacados05.png"
+    },
+    {
+        "name":"red de afiliados",
+        "icon":"../assets/imagesDestacados/icono-destacados06.png"
+    },
+    {
+        "name":"¿como asociarme?",
+        "icon":"../assets/imagesDestacados/icono-destacados07.png"
+    },
+    {
+        "name":"formulario PQRSF",
+        "icon":"../assets/imagesDestacados/icono-destacados08.png"
+    }
+]
