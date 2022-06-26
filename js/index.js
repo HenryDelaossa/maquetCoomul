@@ -46,44 +46,44 @@ itemsWhithSubItems.forEach((item) => {
 /** esta funcion inicializa un carousel, recibe como parametro la clase del elemento contenedor donde quiero inicializar */
 
 
-const dataNews = await getData(RUTA_API_NEWS)
-console.log(dataNews.articles)
-const container_news = document.querySelector(".banner_news")
-const imgBroken = '../assets/banners/imgBroken.png'
+// const { articles } = await getData(RUTA_API_NEWS)
+// console.log(articles)
+// const container_news = document.querySelector(".banner_news")
+// const imgBroken = '../assets/banners/imgBroken.png'
 
 
-if (container_news && dataNews?.articles) {
-    dataNews?.articles.forEach(({ category, urlToImage, title, publishedAt, url }) => {
-        category === undefined ? category = 'sin categoria' : category
-        container_news.innerHTML += `
-                                        <div class="banner-news__ctn">
-                                            <div class="ctn-card__image">
-                                                <a href=${url} target="_blank"> 
-                                                    <img src=${urlToImage} alt=${urlToImage}>
-                                                </a>
-                                            </div>
-                                            <div class="ctn-info">
-                                                <div class="ctn-card__title-category">
-                                                    <p class="dateNotice">${formatDate(publishedAt)}</p>
-                                                    <p class="category">${category}</p>
-                                                </div>
-                                                <div class="titleNotice">
-                                                    <p>${title}</p>
-                                                </div>
-                                            </div>
+// if (container_news && articles) {
+//     articles.forEach(({ category, urlToImage, title, publishedAt, url }) => {
+//         category === undefined ? category = 'sin categoria' : category
+//         container_news.innerHTML += `
+//                                         <div class="banner-news__ctn">
+//                                             <div class="ctn-card__image">
+//                                                 <a href=${url} target="_blank"> 
+//                                                     <img src=${urlToImage} alt=${urlToImage}>
+//                                                 </a>
+//                                             </div>
+//                                             <div class="ctn-info">
+//                                                 <div class="ctn-card__title-category">
+//                                                     <p class="dateNotice">${formatDate(publishedAt)}</p>
+//                                                     <p class="category">${category}</p>
+//                                                 </div>
+//                                                 <div class="titleNotice">
+//                                                     <p>${title}</p>
+//                                                 </div>
+//                                             </div>
 
-                                        </div>`;
+//                                         </div>`;
 
-    });
-    makeCarouser({
-        contenedor: 'banner_news',
-        slidesVisiblesMas1200: 3,
-        toScrollMas1200: 3,
+//     });
+//     makeCarouser({
+//         contenedor: 'banner_news',
+//         slidesVisiblesMas1200: 3,
+//         toScrollMas1200: 3,
 
-        slidesVisiblesMenos1200: 2,
-        toScrollMenos1200: 2
-    });
-}
+//         slidesVisiblesMenos1200: 2,
+//         toScrollMenos1200: 2
+//     });
+// }
 
 
 // codigo para identificar imagenes rotas y cambier por imagen indicadora
