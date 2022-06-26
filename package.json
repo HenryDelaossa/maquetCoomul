@@ -33,7 +33,6 @@
     "asynckit": "^0.4.0",
     "aws-sign2": "^0.7.0",
     "aws4": "^1.11.0",
-    "axios": "^0.27.2",
     "balanced-match": "^1.0.2",
     "bcrypt-pbkdf": "^1.0.2",
     "binary-extensions": "^2.2.0",
