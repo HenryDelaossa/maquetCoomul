@@ -1,0 +1,191 @@
+@media screen and (max-width: 1200px) {
+
+    .section_services {
+        .ctn-general-services {
+
+            .ctn-head-services {
+
+                h3 {
+                    margin-top: -35px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            .ctn-icons-services {
+                align-items: baseline;
+
+                div {
+                    width: 120px;
+
+                }
+            }
+
+            .ctn-info-services {
+
+                // h3 {
+                // }
+
+                .inner-info-services {
+                    .ctn-inner-right-services {
+                        width: 45%;
+
+                        .right-ctb-banner-services {
+                            width: 380px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section_services {
+        min-height: 145vh;
+
+        .ctn-general-services {
+
+
+
+            .ctn-icons-services {
+                align-items: baseline;
+
+                div {
+                    width: 100px;
+
+                }
+            }
+
+            .ctn-info-services {
+                width: 95%;
+                padding: 1.5rem;
+
+                // h3 {
+                // }
+
+                .inner-info-services {
+                    flex-direction: column;
+
+                    .ctn-inner-left-services {
+                        border-bottom: 1px solid $textOrange;
+                        padding-bottom: 2rem;
+                        width: 90%;
+
+                        .left-seguro-slogan {
+                            margin: 0 auto;
+
+                            img {
+                                width: 30%;
+                            }
+                        }
+
+                        .left-links {
+                            text-align: center;
+                        }
+                    }
+
+                    .ctn-inner-right-services {
+                        width: 90%;
+                        margin-top: 2rem;
+                        padding-bottom: 2rem;
+
+                        .right-ctb-banner-services {
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section_services {
+        min-height: 139vh;
+
+        .ctn-general-services {
+
+
+            .ctn-head-services {
+                p {
+                    font-size: .8rem;
+                }
+            }
+
+
+            .ctn-icons-services {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(60px, 1fr));
+                margin-top: 12px;
+
+                div {
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin: 0;
+                    margin-bottom: 1.5rem;
+                    justify-self: center;
+
+                    img {
+                        margin: 0;
+                    }
+
+                    h4 {
+                        font-size: .7rem;
+                    }
+                }
+            }
+
+            .ctn-info-services {
+
+                .inner-info-services {
+
+                    .ctn-inner-right-services {
+
+                        .right-ctb-banner-services {
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section_services {
+        margin-top: 11rem;
+
+        .svgBack {
+            transform: scaleY(2.5);
+        }
+
+        .ctn-general-services {
+            margin-top: -8rem;
+
+            .ctn-head-services {
+                p {
+                    font-size: .8rem;
+                }
+            }
+        }
+
+        .ctn-icons-services {
+            div {
+
+                img {
+                    width: 24px;
+                }
+
+                h4 {
+                    font-size: .6rem;
+                }
+            }
+        }
+    }
+}

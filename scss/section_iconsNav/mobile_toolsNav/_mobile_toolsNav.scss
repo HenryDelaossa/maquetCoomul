@@ -1,0 +1,45 @@
+.section_tools_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .section_tools_mobile {
+        width: 98%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 4rem;
+
+        .ctn-icons-nav-mobile {
+            // width: 80%;
+            margin: 0 auto;
+
+            div {
+                width: 55px;
+                height: 55px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    align-self: center;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            h4 {
+                font-size: 1rem;
+                text-align: center;
+                word-break: keep-all;
+                color: $textLinksMenu;
+
+                a {
+                    text-decoration: none;
+                    color: $textLinksMenu;
+                }
+            }
+
+        }
+    }
+}

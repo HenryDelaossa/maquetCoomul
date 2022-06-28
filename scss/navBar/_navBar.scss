@@ -1,0 +1,174 @@
+.header {
+    width: 100%;
+    min-height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 1rem;
+
+    .navbar {
+        width: 100%;
+        margin: 0 auto;
+
+        .ctn {
+            .ctn-itemsSocial {
+                justify-content: space-between;
+
+                .items {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 70%;
+
+                    .nav-item {
+                        font-size: 14px;
+                        margin: 0 .6rem;
+                        text-transform: capitalize;
+                        flex: 1 1 100px;
+                        text-align: center;
+                        position: relative;
+
+                        a {
+                            font-weight: 600;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                                width: 0%;
+                                height: 4px;
+                                background: $gradientBefHoverMenu;
+                                transition: .3s all;
+                            }  
+                        }
+                        &:hover > a::before {
+                            width: 105%;
+                        }
+
+                        .subNiv {
+                            display: none;
+                            position: absolute;
+                            top: 115%;
+                            left: 5px;
+                            z-index: 1;
+                            background-color: #dfefd8;
+                            padding: .3rem;
+                            width: 130px;
+                            border-radius: 10px;
+                            filter: $dropShadowSubMenus;
+
+                            li {
+                                color: $textgreen;
+                                cursor: pointer;
+                                padding: .5rem;
+                                font-family: $fontTextSecond;
+                                font-weight: 500;
+                                position: relative;
+
+                                .subNiv2 {
+                                    @extend .subNiv;
+                                    top: 10%;
+                                    left: 100%;
+
+                                    li:hover {
+                                        background-color: #dce6d0;
+                                        color: $textGeneric;
+                                    }
+                                }
+
+                                &:hover {
+                                    background-color: #dce6d0;
+                                    color: $textGeneric;
+                                }
+
+                                &:hover>.subNiv2 {
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        .whitSub {
+                            position: relative;
+
+                            &::before {
+                                content: '';
+                                background: $textLinksMenu;
+                                position: absolute;
+                                top: 45%;
+                                left: 95%;
+                                width: 6px;
+                                height: 6px;
+                                padding: .1rem;
+                                clip-path: polygon(0 0, 60% 50%, 0 100%, 0 85%, 40% 50%, 0 15%);
+                            }
+                        }
+
+                        &:hover>.subNiv {
+                            display: block;
+                        }
+
+
+
+
+                        &.contain-sub {
+                            position: relative;
+
+                            &::before {
+                                content: '';
+                                background: $textLinksMenu;
+                                position: absolute;
+                                top: 40%;
+                                left: 100%;
+                                width: 6px;
+                                height: 6px;
+                                padding: .1rem;
+                                clip-path: polygon(50% 70%, 100% 30%, 100% 60%, 55% 100%, 45% 100%, 0 60%, 0 30%)
+                            }
+                        }
+
+                    }
+                }
+
+                .ul-icons-social {
+                    list-style-type: none;
+                    padding: 0px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin: 0px;
+                    width: 25%;
+
+                    .icons-navbar {
+                        position: relative;
+
+                        .search {
+                            @include inputSearch;
+                        }
+
+                        &.icons-navbar:nth-child(1) {
+                            margin-right: .2rem;
+                        }
+
+                        &.icons-navbar:nth-child(2) {
+                            @include socialIcons ($colorFacebook, 32px, .4rem);
+                        }
+
+                        &.icons-navbar:nth-child(3) {
+                            @include socialIcons ($colorTwitter, 32px, .4rem);
+                        }
+
+                        &.icons-navbar:nth-child(4) {
+                            @include socialIcons ($colorsBackInstagram, 32px, .4rem)
+                        }
+
+                        &.icons-navbar:nth-child(5) {
+                            @include socialIcons ($colorYoutube, 32px, .4rem)
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+// @media screen and (max-width: 1200px) {}
+
+@media screen and (max-width:992px) {
+    .section_carousel {
+        .content-banner {
+            // aqui ajustar aplitud de carousel si se desea
+            .banner-contain {
+                height: 50vh;  
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .section_carousel {
+        .content-banner {
+            // aqui ajustar aplitud de carousel si se desea
+            .banner-contain {
+                height: 48vh;  
+            }
+        }
+    }
+}

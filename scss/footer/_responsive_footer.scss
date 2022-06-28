@@ -1,0 +1,52 @@
+@media screen and (max-width: 992px) {
+    .footer {
+        width: 95%;
+
+        .footer-section-info-general {
+
+            display: grid;
+            grid-template-areas: "contacto logo direccion"
+                "redes redes redes";
+            grid-row-gap: 1rem;
+            width: 80%;
+            margin: 0 auto;
+
+            div {
+                justify-self: center;
+                width: 150px;
+            }
+
+            .ctn-logo-footer {
+                grid-area: logo;
+                width: 100%;
+                height: 190px
+            }
+
+            .ctn-contacto {
+                grid-area: contacto;
+                width: 150px;
+
+                p {
+                    line-height: normal;
+                    font-size: 12px;
+                }
+            }
+
+            .ctn-direccion {
+                grid-area: direccion;
+
+                p {
+                    line-height: normal;
+                    font-size: 12px;
+                }
+            }
+
+            .footer-ctn-icons-social {
+                grid-area: redes;
+                width: 100%;
+            }
+
+
+        }
+    }
+}

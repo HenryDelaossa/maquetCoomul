@@ -1,0 +1,83 @@
+@mixin socialIcons ($bacground, $width, $marginSides) {
+    background: $bacground;
+    margin: 0 $marginSides;
+    width: $width;
+    height: $width;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            color: $textWhite;
+        }
+    }
+
+}
+
+@mixin inputSearch {
+
+    background: $bacgroundOrange;
+    height: 35px;
+    border-radius: 35px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 8px;
+
+    input {
+        width: 0;
+        border: none;
+        outline: none;
+        padding: 0;
+        background: none;
+        font-size: 1.1rem;
+        transition: 0.5s ease;
+        line-height: 35px;
+        color: $textWhite;
+    }
+
+    &:hover>input {
+        width: 200px;
+        padding: 0 10px;
+    }
+
+    &:hover>.icon {
+        width: 35px;
+        padding: 0 10px;
+        background: $bacgroundWhite;
+        color: black;
+        outline: 1px solid $textOrange;
+    }
+
+
+
+    .icon {
+        color: $textWhite;
+        // float: right;
+        width: 35px;
+        font-size: 1.2rem;
+        height: 35px;
+        border-radius: 50%;
+        background: $bacgroundOrange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        cursor: pointer;
+        text-decoration: none;
+        position: absolute;
+        top: 0;
+        left: unset;
+        right: 0;
+        i {
+            font-size: 12px;
+        }
+    }
+}

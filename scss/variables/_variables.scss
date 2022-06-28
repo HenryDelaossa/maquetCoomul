@@ -1,0 +1,42 @@
+// text fonts
+$fontTexPrim: 'Poppins', sans-serif;
+$fontTextSecond: 'Barlow', sans-serif;
+
+// backgrounds
+$bacgroundWhite: #ffffff;
+$bacgroundGreen: #00794d;
+$bacgroundOrange: #e6683c;
+$bacgroundDark: #1a1a1a;
+
+// texts and links colors
+$textOrange: #e6683c;
+$textWhite: #ffffff;
+$textgreen: #00794d;
+$textLinksMenu: #254a65;
+$textGeneric: #21435b;
+
+// colors efects blend-multiply
+$colorBlend_whiteOpac: #ece8e1;
+
+
+// bacground gradient self page
+$gradientOrangeSelfPage: linear-gradient(0deg, #ff7100 25%, #ffaf00 93%);
+$gradientBackGreen: linear-gradient(251deg, #6ab026 25%, #93c137 93%);
+$gradientBefHoverMenu: linear-gradient(287deg, #ffaf00 27%, #ff7100 87%);
+
+// bacgrounds social net
+$colorFacebook: #3b5998;
+$colorTwitter: #00acee;
+$colorsBackInstagram: linear-gradient(80deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+$colorYoutube: #c4302b;
+
+// box -shadows
+$dropShadow: drop-shadow(0px 0px 40px #504b485a);
+$dropShadowSubMenus: drop-shadow(0px 0px 10px #0000006e);
+
+// border imagenes
+$borderImages: 30px;
+
+// filter to svg images icon 
+$filterSvgImageGreen: invert(21%) sepia(18%) saturate(6469%) hue-rotate(129deg) brightness(93%) contrast(98%);
+$filterSvgImageWhite: invert(89%) sepia(43%) saturate(1063%) hue-rotate(306deg) brightness(101%) contrast(101%);

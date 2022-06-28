@@ -1,0 +1,15 @@
+.icon-ixed-contact {
+    display: inline-block;
+    position: fixed;
+    top: unset;
+    bottom: 20px;
+    right: 40px;
+    i {
+        color: white;
+        font-size: 2rem;
+        background: $gradientBackGreen;
+        border-radius: 50%;
+        padding: 1rem;
+    }
+
+}

@@ -1,0 +1,91 @@
+// @media screen and (max-width: 992px) {
+//     .secion-partners-blog {
+
+//         .ctn-cardImg-blogs {
+//             flex-direction: column;
+
+//             div {
+//                 width: 60%;
+//                 margin-bottom: 1rem;
+//                 align-items: center;
+//                 justify-content: space-evenly;
+//                 text-align: center;
+
+
+
+//             }
+//         }
+
+//         .ctn-logos-partnerts {
+
+//             div {
+//                 margin: 0 1rem;
+
+//                 img {
+//                     width: 100%;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media screen and (max-width: 992px) {
+    .secion-partners-blog {
+
+        .ctn-cardImg-blogs {
+            flex-direction: column;
+
+            div {
+                width: 65%;
+                margin-bottom: 1rem;
+                align-items: center;
+                justify-content: space-evenly;
+                text-align: center;
+            }
+        }
+
+        .ctn-logos-partnerts {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-template-areas: "risk superSolidaria"
+                "fogacoop visionamo"
+                "redcentral atm";
+            grid-row-gap: 1rem;
+            justify-content: center;
+
+            div {
+                margin: 0 1rem;
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            div:nth-child(1) {
+                grid-area: risk;
+            }
+
+            div:nth-child(2) {
+                grid-area: superSolidaria
+            }
+
+            div:nth-child(3) {
+                grid-area: fogacoop;
+            }
+
+            div:nth-child(4) {
+                grid-area: visionamo;
+            }
+
+            div:nth-child(5) {
+                grid-area: redcentral;
+            }
+
+            div:nth-child(6) {
+                grid-area: atm;
+            }
+        }
+
+    }
+}

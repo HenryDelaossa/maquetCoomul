@@ -1,0 +1,256 @@
+.section_services {
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    position: relative;
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    .ctn-general-services {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        .ctn-head-services {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 3rem;
+            h3  {
+                color: $textWhite;
+            }
+            p {
+                color: $textWhite;
+                font-weight: bold;
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+
+        .ctn-icons-services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 2rem;
+
+            div {
+                width: 180px;
+                margin: 0 .5rem 1rem .5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: baseline;
+                align-items: center;
+                cursor: pointer;
+                transition: .2s all;
+                
+                &:hover  > img, &:hover > h4 {
+                    opacity: 1;
+                    transform: scale(1.03);
+                }
+
+                img {
+                    width: 32px;
+                    opacity: .6;
+                    transition: .2s all;
+                    margin-bottom: 1rem;
+                }
+
+                h4 {
+                    font-size: 1rem;
+                    text-align: center;
+                    word-break: keep-all;
+                    color: $textWhite;
+                    text-transform: uppercase;
+                    opacity: .7;
+                    transition: .2s all;
+                }
+            }
+        }
+
+        .ctn-info-services {
+            background-color: $bacgroundWhite;
+            width: 85%;
+            // min-height: 70vh;
+            margin: 0 auto;
+            border-radius: $borderImages;
+            padding: 4rem;
+            filter: $dropShadow;
+
+            h3 {
+                text-align: center;
+                color: $textgreen;
+                font-weight: bold;
+                letter-spacing: -1px;
+            }
+
+            .inner-info-services {
+                display: flex;
+                justify-content: center;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 3rem;
+
+                .ctn-inner-left-services {
+                    width: 45%;
+
+                    .left-description-service {
+                        margin-bottom: 2rem;
+
+                        p {
+                            padding-right: 1rem;
+                            hyphens: auto;
+                            font-family: $fontTextSecond;
+                            color: $textGeneric;
+                        }
+                    }
+
+                    .left-seguro-slogan {
+                        display: flex;
+                        align-items: center;
+                        width: 90%;
+                        margin-bottom: 1.5rem;
+
+                        img {
+                            width: 40%;
+                            height: auto;
+                        }
+
+                        p {
+                            padding-left: 1rem;
+
+                            color: $textGeneric;
+                        }
+                    }
+
+                    .left-links {
+                        a {
+                            display: block;
+                            i {
+                                margin-right: .5rem;
+                            }
+                        }
+                    }
+                }
+
+                .ctn-inner-right-services {
+                    width: 45%;
+
+                    .right-ctb-banner-services {
+                        width: 450px;
+                        margin: 0 auto;
+                        div {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .slick-next, .slick-arrow {
+                            display: none !important;
+                        }
+
+                        .slick-prev, .slick-arrow {
+                            display: none !important;
+                        }
+
+                        // indicadores
+                        .slick-dots {
+                            // bottom: -80px;
+
+                            li {
+                                button {
+                                    &::before {
+                                        content: '';
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        width: 7px;
+                                        height: 7px;
+                                        background: $bacgroundDark;
+                                        border-radius: 50%;
+                                        opacity: .9;
+
+                                    }
+
+                                }
+
+                                &.slick-active {
+                                    button {
+                                        &::before {
+                                            content: '';
+                                            background-color: transparent;
+                                            border: 2px solid black;
+                                            box-sizing: content-box;
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .item-banner-services {
+                            position: relative;
+                            width: 100%;
+
+                            .slick-list {
+
+                                .slick-track {
+
+                                    margin: 0;
+                                }
+                            }
+
+
+                            .right-ctn-img {
+                                width: 90%;
+                                height: auto;
+                                min-height: 300px;
+                                margin: 0 auto;
+                                background-image: url(../../assets/banners/ahorro.png);
+                                background-position: center;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-clip: content-box;
+                                clip-path: polygon(3% 5%, 9% 11%, 62% 9%, 95% 0, 100% 10%, 94% 53%, 100% 94%, 94% 100%, 43% 96%, 25% 100%, 0 91%, 4% 62%, 0 13%);
+                            }
+
+                            .right-stick {
+                                position: absolute;
+                                top: 20%;
+                                left: -15px;
+                                width: 130px;
+                                background-color: $bacgroundWhite;
+                                border-radius: $borderImages;
+                                min-height: 180px;
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                                align-items: center;
+
+                                i {
+                                    color: $textgreen;
+                                    font-size: 2rem;
+                                    margin-bottom: 1rem;
+                                }
+
+                                p {
+                                    width: 90%;
+                                    word-wrap: break-word;
+                                    text-align: center;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}

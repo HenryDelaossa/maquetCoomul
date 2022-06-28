@@ -1,0 +1,92 @@
+.footer {
+    width: 90%;
+    margin: 0 auto;
+
+    .footer-section-info-general {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .ctn-logo-footer {
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .footer-ctn-icons-social {
+            align-self: center;
+            width: 30%;
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                li {
+                    margin: 0 1rem;
+                }
+
+                li:nth-child(1) {
+                    @include socialIcons($colorFacebook, 40px, 1rem);
+                }
+
+                li:nth-child(2) {
+                    @include socialIcons($colorTwitter, 40px, 1rem);
+                }
+                li:nth-child(3) {
+                    @include socialIcons($colorsBackInstagram, 40px, 1rem);
+                }
+                li:nth-child(4) {
+                    @include socialIcons($colorYoutube, 40px, 1rem);
+                }
+            }
+        }
+
+        .ctn-contacto, .ctn-direccion {
+            h6 {
+                color: $textOrange;
+                margin-bottom: 1rem;
+                font-size: .8rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 0;
+            }
+
+            p {
+                color: $textLinksMenu;
+                line-height: 5px;
+            }
+        }
+    }
+
+    .footer-section-links {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 2rem;
+
+        div {
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+            padding-bottom: 2rem;
+            flex-flow: wrap;
+            a {
+                font-weight: 600;
+                i {
+                    color: rgb(183, 186, 188);
+                    margin-right: .4rem;
+                }
+            }
+        }
+    }
+}

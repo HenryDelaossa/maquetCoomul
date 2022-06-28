@@ -1,0 +1,40 @@
+@import "./variables/variables";
+@import "./mixins/mixins";
+@import "./navBar/navBar";
+@import "./carousel/carouselBanner";
+@import "./section_iconsNav/toolsNav.scss";
+@import "./section_news/section_news.scss";
+@import "./section_services/section_services";
+@import "./section_links_interes/section_links_interes";
+@import "./footer/footer";
+@import "./icon_fixed/section_icon_fixed";
+@import "./section_iconsNav/mobile_toolsNav/mobile_toolsNav";
+
+// responsive 
+@import "./navBar/responsive_nabvar";
+@import "./carousel/responsive_caroselBanner";
+@import "./section_iconsNav/responsive_toolsNav";
+@import './section_services/responsive_section_services';
+@import "./section_links_interes/responsive_section_links_interes";
+@import "./footer/responsive_footer";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    font-family: $fontTextSecond;
+    font-weight: 500;
+    color: $textLinksMenu;
+    text-decoration: none;
+
+
+    &:hover {
+        color: $textLinksMenu;
+    }
+}
+ul {
+    list-style-type: none;
+}
