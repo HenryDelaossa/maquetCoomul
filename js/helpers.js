@@ -15,16 +15,25 @@ export const makeCarouser = ({
     toScrollMenos992 = 1,
     toScrollMenos768 = 1,
     autoplay = true,
-    timeAutoPlay = 4000
+    timeAutoPlay = 4000,
+    dots = true,
+    speed = 1000,
+    arrows= true,
+
 
 
 }) => {
-    $(`.${contenedor}`).slick({
-        dots: true,
+    $(`${contenedor}`).slick({
+        dots: dots,
         slidesToShow: slidesVisiblesMas1200,
         slidesToScroll: toScrollMas1200,
         autoplay: autoplay,
         autoplaySpeed: timeAutoPlay,
+        cssEase: "linear",
+        speed: speed,
+        arrows,
+        
+        
         responsive: [
             {
                 breakpoint: 1200,
@@ -32,21 +41,23 @@ export const makeCarouser = ({
                     slidesToShow: slidesVisiblesMenos1200,
                     slidesToScroll: toScrollMenos1200,
                     infinite: true,
-                    dots: true
+                    dots: dots
                 }
             },
             {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: slidesVisiblesMenos992,
-                    slidesToScroll: toScrollMenos992
+                    slidesToScroll: toScrollMenos992,
+                    dots: dots
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: slidesVisiblesMenos768,
-                    slidesToScroll: toScrollMenos768
+                    slidesToScroll: toScrollMenos768,
+                    dots: dots
                 }
             }
         ]

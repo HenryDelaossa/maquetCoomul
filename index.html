@@ -39,20 +39,35 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">inicio</a>
                         </li>
-                        <li class="nav-item contain-sub-items">
-                            <a class="nav-link whit-subItems" href="#">corporativo</a>
-                            <ul class="ul-sub-items">
+                        <li class="nav-item contain-sub">
+                            <a class="nav-link" href="#">corporativo</a>
+                            <ul class="subNiv">
                                 <li>item 1</li>
-                                <li>item 2</li>
+                                <li class="whitSub">item 2
+                                    <ul class="subNiv2">
+                                        <li>subnivel 2</li>
+                                        <li>subnivel 2</li>
+                                        <li>subnivel 2</li>
+                                    </ul>
+                                </li>
                                 <li>item 3</li>
+                                <li>item 4</li>
+                                <li>item 5</li>
                             </ul>
                         </li>
-                        <li class="nav-item contain-sub-items">
-                            <a class="nav-link whit-subItems" href="#">portafolio</a>
-                            <ul class="ul-sub-items">
+                        <li class="nav-item contain-sub">
+                            <a class="nav-link" href="#">portafolio</a>
+                            <ul class="subNiv">
                                 <li>item 1</li>
                                 <li>item 2</li>
-                                <li>item 3</li>
+                                <li class="whitSub">item 3
+                                    <ul class="subNiv2">
+                                        <li>itemSub1</li>
+                                        <li>itemSub2</li>
+                                        <li>itemSub3</li>
+                                        <li>itemSub4</li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -100,6 +115,7 @@
         </section>
         <!-- seccion para toolnavs -->
         <section class="section_tools"></section>
+        <section class="section_tools_mobile"></section>
         <!-- seccion de noticias -->
         <section class="section_news">
             <article class="article-inner-news">
@@ -124,7 +140,7 @@
         <!-- seccion Nuestros servicios -->
         <section class="section_services">
             <?xml version="1.0" encoding="utf-8"?>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 92">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 92" class="svgBack">
                 <defs>
                     <linearGradient id="backServic" x1="0%" y1="0%" x2="0%" y2="100%">
                         <stop offset="0%" style="stop-color:#ff9e00;stop-opacity:1" />
@@ -192,21 +208,17 @@
                                     </div>
                                 </div>
                                 <div class="item-banner-services">
-                                    <img src="./assets/imgsServicios/forma-credito.png" alt="creditos coomuldesa">
+                                    <img src="./assets/imgsServicios/forma-creditoo.png" alt="creditos coomuldesa">
                                     <div class="right-stick">
                                         <i class="fa-solid fa-building"></i>
                                         <p>aportes sociales</p>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
             </div>
-
-            <div></div>
         </section>
         <!-- seccion otras herramientas + aliados   -->
         <section class="secion-partners-blog">
@@ -257,12 +269,12 @@
             <div class="ctn-logo-footer">
                 <img src="./assets/logo/logo-Coomuldesa-piram.png" alt="logotipo coomuldesa">
             </div>
-            <div>
+            <div class="ctn-contacto">
                 <h6>contáctenos</h6>
                 <p>PBX 7- 727 5493 Fax 7- 727 6146</p>
                 <p>Email info@coomuldesa.com</p>
             </div>
-            <div>
+            <div class="ctn-direccion">
                 <h6>Direcció general</h6>
                 <p>Calle 16 No. 13 33, Edifcio Luis</p>
                 <p>Torres Castro. Socorro Santander</p>
